@@ -2,6 +2,8 @@
 
 ![APIClarity logo](/public/assets/shared/logos/logo-light-horizantal-svg.svg)
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/77afb082-feb4-498c-88cc-eff8fea128ba/deploy-status)](https://app.netlify.com/sites/apiclarity/deploys)
+
 This is the repository for [apiclarity.io](https://apiclarity.io/), the website
 containing information on [APIClarity](https://github.com/apiclarity/apiclarity).
 
