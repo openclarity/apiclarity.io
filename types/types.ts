@@ -53,3 +53,10 @@ export interface IResourcesMedia {
 	mediaType: "Video" | "Webinar" |  "News" | "Conference" | "Podcast";
 	title: string;
 }
+
+export interface IEventColumn {
+	title: string;
+	text: string;
+	eventDetails?: { name: string; date: string }[];
+	link: { text: string; address: string };
+}

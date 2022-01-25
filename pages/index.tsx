@@ -15,7 +15,7 @@ import {
 import {
 	eventsArr,
 	featuresArr,
-  maintainersArr,
+	maintainersArr,
 } from "../data/landingPageArrs";
 import { Carousel } from "react-responsive-carousel";
 import SectionHeader from "../components/reusables/SectionHeader";
@@ -26,6 +26,7 @@ import ReactPlayer from "react-player";
 import useWindowSize from "../hooks/useWindowSize";
 import { AiFillGithub } from "react-icons/ai";
 import Link from "next/link";
+import { EventSection } from "../components/reusables/EventSection";
 
 const Home = ({
 	allPosts,
@@ -37,6 +38,7 @@ const Home = ({
 			<div className={styles.Home}>
 				<HeroBanner />
 				<FeaturesSection />
+				<EventSection image="cil-challenge-apiclarity.png" />
 				<VideoSection />
 				{/* <UpcomingEventsSection /> */}
 				{/* <BlogSliderSection allPosts={allPosts} /> */}
@@ -55,7 +57,9 @@ const HeroBanner = () => {
 					alt="logo"
 					className={styles.HomeHeaderLogo}
 				/>
-				<h1 style={{color: "transparent", height: "0px"}}>APIClarity</h1>
+				<h1 style={{ color: "transparent", height: "0px" }}>
+					APIClarity
+				</h1>
 				<h2 className={styles.HomeHeaderTextSubheader}>
 					Open source for API traffic visibility in
 					K8s&nbsp;clusters
@@ -153,7 +157,7 @@ const UpcomingEventsSection = () => {
 					interval={5000}
 					infiniteLoop
 					showStatus={false}
-          			showThumbs={false}
+					showThumbs={false}
 					showArrows={false}
 				>
 					{eventsArr.map((event) => (
@@ -228,9 +232,7 @@ const BlogSliderSection = ({
 					return (
 						<div
 							onClick={() =>
-								router.push(
-									`${post[BlogMetadata.Slug]}`
-								)
+								router.push(`${post[BlogMetadata.Slug]}`)
 							}
 							className={styles.BlogSliderSectionArticle}
 							key={post[BlogMetadata.Slug]}
