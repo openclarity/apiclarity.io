@@ -212,6 +212,32 @@ $alert-color: #e2231a;
 	}
 }
 
+@mixin ButtonSecondaryMedium {
+    background-color: transparent;
+    cursor: pointer;
+	border-radius: 48px;
+	border: 1px solid $primary-color-50;
+	font-family: "CiscoSansTTMedium";
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 20px;
+	@include BodySmall;
+	padding: 12px 14px;
+	width: 100%;
+	color: $primary-color-50;
+	transition: all 0.3s ease-in-out;
+	&:hover {
+		background-color: $primary-color-60;
+		border: 1px solid $primary-color-60;
+		color: $white;
+	}
+	&:disabled {
+		background-color: $gray-05;
+		color: $gray-70;
+		border: none;
+	}
+}
+
 @mixin ButtonInputLarge {
     background-color: $primary-color-50;
     cursor: pointer;
@@ -255,6 +281,17 @@ $alert-color: #e2231a;
 	}
     &:disabled {
 		color: $gray-60;
+		&:hover {
+			text-decoration: none;
+			cursor: default;
+		}
+	}
+
+	&Disabled {
+		&:hover {
+			text-decoration: none;
+			color: $gray-60;
+		}
 	}
 }
 
@@ -277,7 +314,13 @@ $alert-color: #e2231a;
 		text-underline-offset: 5px;
 		color: $primary-color-60;
 	}
+
     &:disabled {
 		color: $gray-60;
+
+		&:hover {
+			text-decoration: none;
+			cursor: default;
+		}
 	}
 }

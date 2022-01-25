@@ -85,3 +85,13 @@ export enum FiltersTabs {
     Tags = "Tags",
     Authors = "Authors"
 }
+
+export enum EButtonType {
+	PrimaryLarge = "PrimaryLarge",
+	PrimaryMedium = "PrimaryMedium",
+	SecondaryLarge = "SecondaryLarge",
+	SecondaryMedium = "SecondaryMedium",
+	InputLarge = "InputLarge",
+	TextLarge = "TextLarge",
+	TextMedium = "TextMedium",
+}
