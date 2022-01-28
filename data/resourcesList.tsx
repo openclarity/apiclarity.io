@@ -131,6 +131,13 @@ export const resourcesArticles: IResourcesArticle[] = [
 export const resourcesMedia: IResourcesMedia[] = [
 	{
 		title:
+			"APIClarity Q&A Session with Justin Cohen",
+		link: "/resources/q-and-a-video",
+		mediaType: "Video",
+		image: `${ImgPaths.SharedImages}/resourcesPage/logo-light-icon-svg.svg`,
+	},
+	{
+		title:
 			"Cisco Champion - S8|42 API Visibility with APIClarity",
 		link: "https://podcasts.apple.com/ca/podcast/s8-e42-api-visibility-with-apiclarity/id1382946335?i=1000538992503",
 		mediaType: "Podcast",
