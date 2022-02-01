@@ -14,7 +14,7 @@ import { IBlogMetadata } from "../types/types";
 import { parseAuthors } from "../utils/parseAuthors";
 import ReactMarkdown from "react-markdown";
 import markdownToHtml from "../lib/markdownToHtml";
-import { BlogJsonLd } from "next-seo";
+import { ArticleJsonLd } from "next-seo";
 
 export default function Post({
 	post,
@@ -58,7 +58,8 @@ export default function Post({
 									}`}
 								/>
 							</Head>
-							<BlogJsonLd
+							<ArticleJsonLd
+								type="Blog"
 								url={`${router.basePath}${router.asPath}`}
 								images={[
 									`https://apiclarity.io${
