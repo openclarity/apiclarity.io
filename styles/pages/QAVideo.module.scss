@@ -1,0 +1,44 @@
+@use "../variables" as *;
+
+.Section {
+	padding-left: 128px;
+	@media (min-width: 1600px) {
+		padding-left: 300px;
+	}
+	@media (min-width: 2000px) {
+		padding-left: 400px;
+	}
+	@media (max-width: 1260px) {
+		padding-left: 81px;
+	}
+	@media (max-width: 640px) {
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+
+	& h1 {
+		@include H400;
+		margin-bottom: 24px;
+		@media (max-width: 1260px) {
+			@include H300;
+			margin-bottom: 24px;
+		}
+
+		@media (max-width: 640px) {
+			@include H200;
+			margin-bottom: 24px;
+		}
+	}
+
+	&VideoContainer {
+		width: 1000px;
+
+		@media (max-width: 1260px) {
+			width: 600px;
+		}
+
+		@media (max-width: 640px) {
+			width: 100%;
+		}
+	}
+}
