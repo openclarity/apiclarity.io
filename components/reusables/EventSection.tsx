@@ -11,7 +11,7 @@ export const EventSection = ({ image }: { image: string;}) => {
 
 	return (
 		<div className={styles.Event}>
-			<CustomImage
+			{/* <CustomImage
 				styleName={styles.EventBgImage}
 				src={`/assets/shared/events/Event-${
 					windowSize.width > 1024
@@ -26,7 +26,7 @@ export const EventSection = ({ image }: { image: string;}) => {
 				}-bg.png`}
 				alt="event background"
 				fullWidth
-			/>
+			/> */}
 			<div className={styles.EventContent}>
 				<h4 className={styles.EventContentHeader}>
 					Cisco Innovation Labs Challenge: APIClarity
