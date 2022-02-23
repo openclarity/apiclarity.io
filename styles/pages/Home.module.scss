@@ -72,7 +72,10 @@
 }
 
 .FeaturesSection {
-	padding-top: 5rem;
+	& img {
+		z-index: -1;
+	}
+	position: relative;
 	&Header {
 		font-size: 5rem;
 		color: #333;

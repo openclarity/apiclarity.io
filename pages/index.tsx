@@ -27,6 +27,7 @@ import useWindowSize from "../hooks/useWindowSize";
 import { AiFillGithub } from "react-icons/ai";
 import Link from "next/link";
 import { EventSection } from "../components/reusables/EventSection";
+import CustomImage from "../components/reusables/CustomImage";
 
 const Home = ({
 	allPosts,
@@ -37,8 +38,8 @@ const Home = ({
 		<Layout pageTitle="Home">
 			<div className={styles.Home}>
 				<HeroBanner />
-				<FeaturesSection />
 				<EventSection image="cil-challenge-apiclarity.png" />
+				<FeaturesSection />
 				<VideoSection />
 				{/* <UpcomingEventsSection /> */}
 				{/* <BlogSliderSection allPosts={allPosts} /> */}
@@ -70,8 +71,25 @@ const HeroBanner = () => {
 };
 
 const FeaturesSection = () => {
+	const windowSize = useWindowSize()
 	return (
 		<div className={styles.FeaturesSection}>
+			{/* <CustomImage
+				styleName={styles.EventBgImage}
+				src={`/assets/shared/events/Event-${
+					windowSize.width > 1024
+						? "1440"
+						: windowSize.width > 900
+						? "1024"
+						: windowSize.width > 500
+						? "768"
+						: windowSize.width > 320
+						? "414"
+						: "320"
+				}-bg.png`}
+				alt="event background"
+				fullWidth
+			/> */}
 			<div
 				className={
 					styles.FeaturesSectionShortDescriptionContainer
