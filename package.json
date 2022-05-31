@@ -29,7 +29,7 @@
     "remark-html": "^15.0.1",
     "sass": "^1.51.0",
     "sharp": "^0.30.4",
-    "swiper": "^8.1.4",
+    "swiper": "^8.2.0",
     "webpack": "^5.72.0"
   },
   "devDependencies": {
