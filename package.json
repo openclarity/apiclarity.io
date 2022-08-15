@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@stefanprobst/rehype-extract-toc": "^2.2.0",
     "bowser": "^2.11.0",
     "classnames": "^2.3.1",
     "date-fns": "^2.29.1",
@@ -25,11 +26,14 @@
     "react-markdown": "^8.0.3",
     "react-player": "^2.10.1",
     "react-responsive-carousel": "^3.2.23",
+    "rehype": "^12.0.1",
+    "rehype-slug": "^5.0.1",
     "remark": "^14.0.2",
     "remark-html": "^15.0.1",
     "sass": "^1.54.4",
     "sharp": "^0.30.7",
     "swiper": "^8.3.2",
+    "unified": "^10.1.2",
     "webpack": "^5.74.0"
   },
   "devDependencies": {
